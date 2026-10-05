@@ -52,7 +52,7 @@
   </main>
   <script>
     'use strict';
-    const BACKEND_URL = 'PASTE_YOUR_SWIMFIT_FEEDBACK_EXEC_URL_HERE';
+    const BACKEND_URL = 'https://script.google.com/macros/s/AKfycbyG9Pdc-IkeBoEYFeUSY6PX7fIIMHHNe_4a5dWa_ydkfEqudJYdqODbtNBmMXl5KBsN/exec';
     const form = document.getElementById('feedbackForm'); const submitBtn = document.getElementById('submitBtn'); const status = document.getElementById('status'); const thanks = document.getElementById('thanks');
     function setStatus(text, type = 'info') { status.textContent = text; status.className = type; }
     function getUrl() { if (BACKEND_URL.includes('PASTE_YOUR_') || !/^https:\/\/script\.google\.com\/macros\/s\/[^\s/]+\/exec$/.test(BACKEND_URL)) throw new Error('Configure the separate feedback Apps Script /exec URL in this HTML file.'); return BACKEND_URL; }
